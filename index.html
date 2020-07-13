@@ -1,35 +1,74 @@
+<!DOCTYPE html>
 <html>
-     <head>
-        <title>Prova Instrutor</title>
-     </head>
-     <body>
-        <header>
-            <h1>Generation</h1>
-        </header>
-        <nav>
-            <ul>
-              <li><a href="#">Home</a></li>              
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">Contato</a></li>                    
-            </ul>
-        </nav>
-        <section id="home">
-          <h1>A Generation</h1>
-          <p>Acredito que a Generation representa e "muito!", porque aposta na educação de forma acessível e com diversidade. Através da Generation, os jovens 
-            podem desenvolver uma nova perspectiva de vida acreditando mais em si e no seu potencial, desta forma oferencendo para o mercado profissionais capacitados
-            para atender as exigências de um mercado que cresce constantemente.
-          </p>
-        </section>
-        <section id="sobre">
-          <h1>Sobre nós</h1>
-            <img src="./img/Tecnologia-e-Educação-2.png" alt="">
-            <h2>Missão</h2>
-            <h2>Visão</h2>
-            <h2>Valores</h2>
-        </section>
-      
-      <footer>
-          <p>Todos os direitos reservados.</p>
-      </footer>
-     </body> 
-  </html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">  
+  <script src="main.js"></script>
+  <title>Teste Generation</title>
+</head>
+
+<body>
+  <nav id="menu">    
+    <ul>
+      <li>Meu site</li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+  <section id="home">
+    <h1>A Generation</h1>
+    <p>Acredito que a Generation representa e "muito!", porque aposta na educação de forma acessível e com diversidade.
+      Através da Generation, os jovens
+      podem desenvolver uma nova perspectiva de vida acreditando mais em si e no seu potencial, desta forma oferencendo
+      para o mercado profissionais capacitados
+      para atender as exigências de um mercado que cresce constantemente.
+    </p>
+  </section>
+
+  <section id="sobre">
+    <h1>Sobre nós</h1>
+      <img src="./img/Tecnologia-e-Educação-2.png" alt="">
+      <h2>Missão</h2>
+      Lorem ipsum quis metus viverra elementum posuere pretium blandit nibh, iaculis faucibus velit curabitur sagittis
+      gravida auctor facilisis aenean, sit enim blandit vestibulum sit posuere litora rhoncus. donec vulputate tincidunt
+      pulvinar interdum elementum etiam tristique fermentum cras massa amet, dictumst donec platea porta amet odio
+      bibendum suscipit ultrices torquent.
+
+      <h2>Visão</h2>
+      Inceptos mattis convallis potenti donec bibendum nulla fermentum diam ad platea
+      sapien, hendrerit volutpat pellentesque in congue dui porttitor scelerisque aenean odio. nostra ac quisque id
+      interdum platea conubia cubilia conubia lacinia placerat aenean, viverra at quisque varius adipiscing elit etiam
+      habitasse aliquet purus.
+
+      <h2>Valores</h2>
+      Sollicitudin tempor aenean eros consectetur, accumsan aliquet diam nec commodo, ligula magna duis. lorem imperdiet
+      lacinia et lacinia, senectus rhoncus consectetur rhoncus, et praesent orci. felis nostra primis iaculis lobortis id
+      blandit, congue dolor habitasse donec. eleifend vitae iaculis elementum sit vel nisl pellentesque, fames sagittis
+      curabitur fusce eget sodales integer, malesuada fusce viverra neque rhoncus cursus.
+  </section>
+
+  <section id="contato">
+    <form name="meu_form">
+   
+      <h1>Entre em contato</h1>
+             
+      <input type="text" id="nomeid" placeholder="Digite seu nome..." required="required" name="nome" />
+      <label for="nome">Nome</label>
+     
+      <input type="email" id="emailid" placeholder="Digite seu e-mail..." name="email" />
+      <label for="email">Email</label>
+     
+      <textarea placeholder="Deixe sua mensagem"></textarea>
+     
+      <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" /> 
+    </form>
+  </section>
+
+  <footer>
+    <p>Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+
+</html>
