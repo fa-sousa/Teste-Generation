@@ -1,91 +1,29 @@
-#menu ul {
-    padding:0px;
-    margin:0px;
-    background-color:#EDEDED;
-    list-style:none;
-}
-
-#menu ul li {
-     display: inline;
-    }
-
-#menu ul li a {
-    padding: 4px 12px;
-    display: inline-block;
-    font-size: larger;
-    background-color:#EDEDED;
-    color: #333;
-    text-decoration: none;
-    border-bottom:3px solid #EDEDED;
-}
-
-#menu ul li a:hover {
-    background-color:#D6D6D6;
-    color: #6D6D6D;
-    border-bottom:3px solid rgb(0, 55, 234);
-}
-
 #home {
+    display: flex;
+    margin-top: 100px;
     text-align: center;
-    font-size: 35px;
-    margin: 100px;
-    padding: 10px;
+}
+#home p {
+    margin-top: 50px;
+    font-size: larger;
 }
 
 #sobre {
-    display: inline;
-}
-  
-form {
-    font-family: Verdana,Tahoma,sans-serif;
-    font-size: 15px;
-    background-color: rgb(204, 199, 204);
-    max-width: 500px;
+    display: flex;
     text-align: center;
-    margin-left: 30%;
+    margin-top: 100px;
 }
-  
-input, textarea {
-    width: 200px;
-    padding: 10px;
-    color: black;
-    margin-left: 20px;
-    margin-top: 10px;
-    border: 1px solid;
-}
-  
-input:hover, textarea:hover, input:focus, textarea:focus {
-    border-color: #000066;
-    box-shadow: 5px 0px 9px rgb(39, 106, 252);
-    color: black;
-    font-weight: bold;
-}
-  
-.enviar {
-    background-color: rgb(142, 146, 146);
-    height: 40px;
-    width: 100px;
-    font-weight: bold;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border: 1px solid;
-    color: black;
-}
-  
-textarea {
-    width: 400px;
-    height: 120px;
-    line-height: 20px;
-    max-width: 400px;
-}
-  
-form label {
-    margin-left: 20px;
-    color: #FFFFFF;
-    font-weight: bold;
+#sobre h2 {
+ margin-top: 50px;
 }
 
+#contato {
+    align-items: center;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 10%;
+}
+  
 footer{
     text-align: center;
     font-size: larger;

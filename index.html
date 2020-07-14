@@ -2,72 +2,105 @@
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">  
-  <script src="main.js"></script>
+  <meta name="charset" content="utf-8" />
+  <meta name="viewport" content="width-device-width, initial-scale-1.0" />
   <title>Teste Generation</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <nav id="menu">    
-    <ul>
-      <li>Meu site</li>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#sobre">Sobre</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Meu site</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sobre">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">Contato</a>
+        </li>
+      </ul>
+    </div>
   </nav>
+
   <section id="home">
-    <h1>A Generation</h1>
-    <p>Acredito que a Generation representa e "muito!", porque aposta na educação de forma acessível e com diversidade.
-      Através da Generation, os jovens
-      podem desenvolver uma nova perspectiva de vida acreditando mais em si e no seu potencial, desta forma oferencendo
-      para o mercado profissionais capacitados
-      para atender as exigências de um mercado que cresce constantemente.
-    </p>
+    <div class="col-md-6 col-lg-6">
+      <img width="600px" height="400px" src="./img/diversidade.jpg" alt="">
+    </div>
+    <div class="col-md-6 col-lg-6">
+      <h1>Generation representa</h1>
+      <p>Acredito que a Generation representa e "muito!", porque aposta na educação de forma acessível e com diversidade.
+        Através da Generation, os jovens
+        podem desenvolver uma nova perspectiva de vida acreditando mais em si e no seu potencial, desta forma oferencendo
+        para o mercado profissionais capacitados
+        para atender as exigências de um mercado que cresce constantemente.
+      </p>
+    </div>
   </section>
 
   <section id="sobre">
-    <h1>Sobre nós</h1>
-      <img src="./img/Tecnologia-e-Educação-2.png" alt="">
+    
+    
+    <div class="col-lg-6 col-md-6">
+      <h1>Sobre nós</h1>
+      <img width="600px" height="400px" src="./img/Tecnologia-e-Educação-2.png" alt="">
+    </div>
+    <div class="col-lg-6 col-md-6">
+      
       <h2>Missão</h2>
       Lorem ipsum quis metus viverra elementum posuere pretium blandit nibh, iaculis faucibus velit curabitur sagittis
       gravida auctor facilisis aenean, sit enim blandit vestibulum sit posuere litora rhoncus. donec vulputate tincidunt
       pulvinar interdum elementum etiam tristique fermentum cras massa amet, dictumst donec platea porta amet odio
       bibendum suscipit ultrices torquent.
-
-      <h2>Visão</h2>
-      Inceptos mattis convallis potenti donec bibendum nulla fermentum diam ad platea
-      sapien, hendrerit volutpat pellentesque in congue dui porttitor scelerisque aenean odio. nostra ac quisque id
-      interdum platea conubia cubilia conubia lacinia placerat aenean, viverra at quisque varius adipiscing elit etiam
-      habitasse aliquet purus.
-
+  
       <h2>Valores</h2>
       Sollicitudin tempor aenean eros consectetur, accumsan aliquet diam nec commodo, ligula magna duis. lorem imperdiet
       lacinia et lacinia, senectus rhoncus consectetur rhoncus, et praesent orci. felis nostra primis iaculis lobortis id
       blandit, congue dolor habitasse donec. eleifend vitae iaculis elementum sit vel nisl pellentesque, fames sagittis
       curabitur fusce eget sodales integer, malesuada fusce viverra neque rhoncus cursus.
+    </div>
+    
   </section>
 
   <section id="contato">
-    <form name="meu_form">
-   
-      <h1>Entre em contato</h1>
-             
-      <input type="text" id="nomeid" placeholder="Digite seu nome..." required="required" name="nome" />
-      <label for="nome">Nome</label>
-     
-      <input type="email" id="emailid" placeholder="Digite seu e-mail..." name="email" />
-      <label for="email">Email</label>
-     
-      <textarea placeholder="Deixe sua mensagem"></textarea>
-     
-      <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" /> 
-    </form>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+      <h1>Contate-nos</h1>
+      <form id="formulario">
+        <label for="name">Nome:</label>
+        <div>
+          <input type="text" name="name" id="input-name" required="required" />
+        </div>
+        <label for="mail">E-mail:</label>
+        <div>
+          <input type="text" name="email" id="input-email" required="required" />
+        </div>
+        <label for="msg">Mensagem:</label>
+        <div>
+
+          <textarea name="msg" id="input-msg" required="required"></textarea>
+        </div>
+        <div class="button">
+          <button onclick="Enviar();">Enviar</button>
+        </div>
+      </form>
+    </div>
   </section>
 
   <footer>
     <p>Todos os direitos reservados.</p>
   </footer>
+
+  <script src="main.js"></script>
+  <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 </body>
 
